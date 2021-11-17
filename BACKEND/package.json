@@ -4,14 +4,23 @@
   "description": "Heart Touching  Photography",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "data:import": "node BACKEND/importData.js"
   },
   "author": "Thamali Nirmala",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.3.0",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mongoose": "^6.0.12"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.15"
   }
 }

@@ -3,15 +3,12 @@ const mongoose = require("mongoose");
 const cors = require("cors"); //CORS is a node.js package for providing a Connect/Express  middleware that can be used to enable CORS with various options.
 const dotenv = require("dotenv"); //Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology. 
 
-require("dotenv").config();  //these line is necessary for configuration .env file
+require("dotenv").config("../config.env");  //these line is necessary for configuration .env file
 
 const URL = process.env.MONGODB_URL;
 
 mongoose.connect(URL , {  //define connection
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true
+    
 });
     
 const connection = mongoose.connection; //assign database connection for a constant variable
@@ -33,3 +30,13 @@ app.use(express.json()); //parse various different custom JSON types as JSON
 app.listen(PORT , () => {
     console.log(`Server is up and running on port number ${PORT}`);
 });
+
+app.use("/api/auth", require("./routes/auth"));
+
+app.use("/weddingShoot", require("./routes/weddingShoot"));
+app.use("/preShoot", require("./routes/preShoot"));
+app.use("/modelling", require("./routes/modelling"));
+app.use("/goingAway", require("./routes/goingAway"));
+app.use("/birthDay", require("./routes/birthDay"));
+
+

@@ -35,7 +35,7 @@ function Footer (){
             {/*<!-- Copyright -->*/}
             <div class="text-center p-3" style={{backgroundcolor: "rgba(0, 0, 0, 0.2);"}}>
                 © 2021 Copyright: 
-                <a class="text-white" href="#"> Studio-600D</a>
+                <a class="text-white" href="#" style = {{textDecoration:"none"}}> Studio-600D</a>
                 
             </div>
             {/*<!-- Copyright -->*/}
