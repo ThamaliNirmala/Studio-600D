@@ -26,6 +26,9 @@ const GoingAwaySchema = new Schema({
     },
     password:{
         type:String
+    },
+    category:{
+        type:String
     }
 
 })

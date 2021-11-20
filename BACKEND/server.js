@@ -2,6 +2,7 @@ const express = require("express"); //Fast, unopinionated, minimalist web framew
 const mongoose = require("mongoose");
 const cors = require("cors"); //CORS is a node.js package for providing a Connect/Express  middleware that can be used to enable CORS with various options.
 const dotenv = require("dotenv"); //Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology. 
+const errorHandler = require("./middleware/error");
 
 require("dotenv").config("../config.env");  //these line is necessary for configuration .env file
 
@@ -38,5 +39,8 @@ app.use("/preShoot", require("./routes/preShoot"));
 app.use("/modelling", require("./routes/modelling"));
 app.use("/goingAway", require("./routes/goingAway"));
 app.use("/birthDay", require("./routes/birthDay"));
+
+//Error Handler (Should be the last piece of middleware)
+app.use(errorHandler);
 
 

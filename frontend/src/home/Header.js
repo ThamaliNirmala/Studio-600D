@@ -105,11 +105,11 @@ const Header = () =>{
                         </div>
                         <div className="card-body">
                             <center>
-                                <h5 className="card-title">Crew of the Studio-600D <i class="fa fa-heart" aria-hidden="true" style = {{color:"red"}}></i> <i class="fa fa-camera" aria-hidden="true"></i></h5>
-                                    <a href="https://www.facebook.com/kasun.chinthaka.167" target="_blank"><img src="https://i.ibb.co/PF27Ntv/kasun.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Kasun Perera"/></a>
-                                    <a href="https://www.facebook.com/thivazz" target="_blank"><img src="https://i.ibb.co/D1mn5qB/Thiwanka.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Thiwanka Padmal"/></a>
-                                    <a href="https://www.facebook.com/profile.php?id=100011016543706" target="_blank"><img src="https://i.ibb.co/5GVq2GR/Amila.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Amila Perera"/></a>
-                                    <a href="https://www.facebook.com/pasindu.randimalrasnayaka" target="_blank"><img src="https://i.ibb.co/SwdBsXy/Pasindu.jpg" style={{width:"19.9%"}} className="zoom"title="Pasindu Randimal"/></a><br/>
+                                <h5 className="card-title">Crew of the Studio-600D <i class="fa fa-heart" aria-hidden="true" style = {{color:"red"}}></i> <i class="fa fa-camera" aria-hidden="true"></i></h5><br/>
+                                    <a href="https://www.facebook.com/kasun.chinthaka.167" target="_blank"><img  class="rounded-circle" src="https://i.ibb.co/2ksB7CY/kasunP.jpg"  style={{width:"20%", marginRight:"15px"}} className="zoom" title="Kasun Perera"/></a>
+                                    <a href="https://www.facebook.com/thivazz" target="_blank"><img class="rounded-circle" src="https://i.ibb.co/D1mn5qB/Thiwanka.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Thiwanka Padmal"/></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100011016543706" target="_blank"><img class="rounded-circle" src="https://i.ibb.co/5GVq2GR/Amila.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Amila Perera"/></a>
+                                    <a href="https://www.facebook.com/pasindu.randimalrasnayaka" target="_blank"><img class="rounded-circle" src="https://i.ibb.co/SwdBsXy/Pasindu.jpg" style={{width:"19.9%"}} className="zoom"title="Pasindu Randimal"/></a><br/>
                             </center>
                         </div><br/>
                     </div>

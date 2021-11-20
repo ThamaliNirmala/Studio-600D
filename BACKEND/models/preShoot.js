@@ -26,6 +26,9 @@ const PreShootSchema = new Schema({
     },
     password:{
         type:String
+    },
+    category:{
+        type:String
     }
 
 })

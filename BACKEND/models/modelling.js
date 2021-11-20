@@ -26,6 +26,9 @@ const ModellingSchema = new Schema({
     },
     password:{
         type:String
+    },
+    category:{
+        type:String
     }
 
 })

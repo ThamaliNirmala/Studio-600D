@@ -3,18 +3,20 @@ import {Link} from "react-router-dom";
 import axios from "axios";
 import TextField from "@material-ui/core/TextField";
 import Button from '@material-ui/core/Button';
-
-
+import crypto from "crypto";
 
 const Login = ({history}) =>{
     
+    const id = crypto.randomBytes(32).toString("hex");
     const [password , setPassword] = useState("");
     const [email , setEmail] = useState("");
     const [error , setError] = useState("");
+    
 
     useEffect(()=>{
         if(localStorage.getItem("authToken")){  //push a user if he already logged in
-            history.push("/login");
+            
+            history.push("admin-login");
         }
     } , [history])
 
@@ -29,10 +31,10 @@ const Login = ({history}) =>{
 
         try {
             const {data} = await axios.post("http://localhost:8070/api/auth/login" , {email , password} , config);
-
+            
             localStorage.setItem("authToken" , data.token);
 
-            history.push("/");
+            history.push("admin-login");
 
         } catch (error) {
             setError(error.response.data.error);
@@ -147,12 +149,12 @@ const Login = ({history}) =>{
                 </nav>
                 <article>
                 <form onSubmit={loginHandler}>
-                    <div class="card w-75" style = {{marginRight: "auto", marginLeft:"auto", display:"block"}}>
+                    <div class="card" style = {{marginRight: "auto", marginLeft:"auto", display:"block"}}>
                         <div class = "card-header">⚠️This Section only for Admin </div>
                         <div className="card-body">
                             <center>
-                                <br/>
-                                        {error && <span className="badge bg-warning">{error}</span>}
+                                        <h5 className="card-title">Login Form</h5>
+                                        {error && <span className="badge bg-warning">{error}</span>} <br/>
                                        <TextField
                                             id="outlined-email-input"
                                             label="Email"
@@ -163,7 +165,8 @@ const Login = ({history}) =>{
                                             margin="normal"
                                             variant="outlined"
                                             size="small"
-                                            value = {email} onChange = {(e)=>setEmail(e.target.value)}
+                                            color="secondary"
+                                            value = {email} onChange = {(e)=>setEmail(e.target.value)} required
                                             /><br/>
                                         <TextField
                                             id="outlined-password-input"
@@ -174,8 +177,9 @@ const Login = ({history}) =>{
                                             margin="normal"
                                             variant="outlined"
                                             size="small"
+                                            color="secondary"
                                             disableRipple
-                                            value = {password} onChange = {(e)=>setPassword(e.target.value)}
+                                            value = {password} onChange = {(e)=>setPassword(e.target.value)} required
                                             /><br/><br/>
                                         <Button
                                             variant="contained"
@@ -183,7 +187,7 @@ const Login = ({history}) =>{
                                             type = "submit"
                                             disableRipple
                                             >
-                                            <i class="fa fa-sign-in" aria-hidden="true" style = {{marginRight:"7px"}}></i><span >login</span>
+                                            <i class="fa fa-sign-in" aria-hidden="true" style = {{marginRight:"4px"}}></i><span >login</span>
                                         </Button>
                                         
                                     </center>

@@ -2,7 +2,7 @@ const router = require("express").Router();
 const BirthDay = require("../models/birthDay");
 
 router.route('/add').post((req, res) => {
-    const modelerName = req.body.modelerName;
+    const personName = req.body.personName;
     const imgURL1 = req.body.imgURL1;
     const imgURL2 = req.body.imgURL2;
     const imgURL3 = req.body.imgURL3;
@@ -14,7 +14,7 @@ router.route('/add').post((req, res) => {
     
 
     const newBirthDayData = {
-        modelerName,
+        personName,
         imgURL1,
         imgURL2,
         imgURL3,
@@ -44,7 +44,7 @@ router.route("/").get((req , res)=>{ //route for display all
 
 router.route("/update/:id").put(async (req , res)=>{  //update data
     let BirthDayID = req.params.id;
-    const modelerName = req.body.modelerName;
+    const personName = req.body.personName;
     const imgURL1 = req.body.imgURL1;
     const imgURL2 = req.body.imgURL2;
     const imgURL3 = req.body.imgURL3;
@@ -54,7 +54,7 @@ router.route("/update/:id").put(async (req , res)=>{  //update data
     const likes = Number(req.body.likes) + 1;
     const unLikes = Number(req.body.unLikes) + 1;
 
-    const updateBirthDay = {modelerName , imgURL1 , imgURL2 , imgURL3 ,category, password, downloads, likes, unLikes};
+    const updateBirthDay = {personName , imgURL1 , imgURL2 , imgURL3 ,category, password, downloads, likes, unLikes};
 
     await BirthDay.findByIdAndUpdate(BirthDayID , updateBirthDay)
     .then(()=>{

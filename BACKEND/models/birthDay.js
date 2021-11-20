@@ -26,6 +26,9 @@ const BirthDaySchema = new Schema({
     },
     password:{
         type:String
+    },
+    category:{
+        type:String
     }
 
 })
