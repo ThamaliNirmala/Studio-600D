@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { Link , useParams} from "react-router-dom";
 import "../Home/Header.css";
-import Devider from "./Devider";
+import ViewDevider from "./ViewDevider";
 import Button from '@mui/material/Button';
 
-const PrivateScreen = ({history} , props)=>{
+const CollectionView = ({history} , props)=>{
 
     useEffect(()=>{
         if(!localStorage.getItem("authToken")){  //push a user if he already logged in
@@ -112,7 +112,7 @@ const PrivateScreen = ({history} , props)=>{
         </div>
         </div>
         <div className="nav-flex-icons" >
-            <Link to={`/admin/collectionview/${id}/${name}`} style={{float:"right" , marginRight:"10px", textDecoration: "none"}}><Button variant="outlined">View</Button></Link>
+            <Link to={`/admin/add/${id}/${name}`} style={{float:"right" , marginRight:"10px", textDecoration: "none"}}><Button variant="outlined">Add</Button></Link>
         </div><br/>
             <hr class="my-4"></hr>
             <center>
@@ -124,7 +124,7 @@ const PrivateScreen = ({history} , props)=>{
                 <article className="article">
                     <center>
                         <div className="container" style={{width:"100%"}}>
-                            <Devider/>
+                            <ViewDevider/>
                         </div>
                     </center>
                 </article>
@@ -135,4 +135,4 @@ const PrivateScreen = ({history} , props)=>{
 }
 
 
-export default PrivateScreen;
+export default CollectionView;

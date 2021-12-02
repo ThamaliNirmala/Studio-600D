@@ -5,21 +5,16 @@ import TextField from "@material-ui/core/TextField";
 import Button from '@material-ui/core/Button';
 import crypto from "crypto";
 
+
 const Login = ({history}) =>{
-    
     const id = crypto.randomBytes(32).toString("hex");
     const [password , setPassword] = useState("");
     const [email , setEmail] = useState("");
     const [error , setError] = useState("");
+    const [value , setValue] = useState({
+        email:"Kasun Perera"
+    });
     
-
-    useEffect(()=>{
-        if(localStorage.getItem("authToken")){  //push a user if he already logged in
-            
-            history.push("admin-login");
-        }
-    } , [history])
-
     const loginHandler = async (e)=>{
         e.preventDefault();
 
@@ -31,10 +26,10 @@ const Login = ({history}) =>{
 
         try {
             const {data} = await axios.post("http://localhost:8070/api/auth/login" , {email , password} , config);
-            
+            setValue(data.email);
             localStorage.setItem("authToken" , data.token);
 
-            history.push("admin-login");
+            history.push(`/admin/add/${id}/${email}`);
 
         } catch (error) {
             setError(error.response.data.error);
@@ -44,6 +39,12 @@ const Login = ({history}) =>{
         }
     }
 
+    useEffect(()=>{
+        if(localStorage.getItem("authToken")){  //push a user if he already logged in
+            history.push(`/admin/add/${id}/${value.email}`);
+        }
+    } , [history])
+
     const  showPassword = () => {
         var x = document.getElementById("myInput");
         if (x.type === "password") {
@@ -51,9 +52,7 @@ const Login = ({history}) =>{
         } else {
           x.type = "password";
         }
-      }
-      
-
+    }
     var m_names = new Array("January", "February", "March", 
                 "April", "May", "June", "July",
                 "August", "September", 
@@ -149,8 +148,10 @@ const Login = ({history}) =>{
                 </nav>
                 <article>
                 <form onSubmit={loginHandler}>
-                    <div class="card" style = {{marginRight: "auto", marginLeft:"auto", display:"block"}}>
-                        <div class = "card-header">⚠️This Section only for Admin </div>
+                    <div className="card" style = {{marginRight: "auto", marginLeft:"auto", display:"block"}}>
+                        <div className = "card-header">
+                            ⚠️This Section only for Admin 
+                        </div>
                         <div className="card-body">
                             <center>
                                         <h5 className="card-title">Login Form</h5>

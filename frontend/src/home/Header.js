@@ -60,11 +60,11 @@ const Header = () =>{
                             <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Collection</a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Pre Shoot</a>
-                                <a className="dropdown-item" href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Wedding Shoot</a>
-                                <a className="dropdown-item" href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Going Away</a>
-                                <a className="dropdown-item" href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Modelling photography</a>
-                                <a className="dropdown-item" href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Birthday Shoot</a>
+                                <a className="dropdown-item" href="#"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Pre Shoot</a>
+                                <a className="dropdown-item" href="#"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Wedding Shoot</a>
+                                <a className="dropdown-item" href="#"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Going Away</a>
+                                <a className="dropdown-item" href="#"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Modelling photography</a>
+                                <a className="dropdown-item" href="#"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Birthday Shoot</a>
                             </div>
                             </li>   
                             <li className="nav-item">
@@ -80,17 +80,17 @@ const Header = () =>{
                 </div>
                 </div>
             </header>
-            <hr class="my-4"></hr>
+            <hr className="my-4"></hr>
             <center>
                 <h2 style = {{fontFamily:"Times, Times New Roman, serif"}}> The Most Wonderful Wedding Photography In The World.</h2>
             </center>
-            <hr class="my-4"></hr>
+            <hr className="my-4"></hr>
 
             <section>
                 <nav className="nav">
                     <ul className="ul">
                         <center>
-                            <li className="li"><Link class="active" to = "/">Home</Link></li>
+                            <li className="li"><Link className="active" to = "/">Home</Link></li>
                             <li className="li"><a href="#news">Modelling Shoot</a></li>
                             <li className="li"><a href="#contact">Wedding Shoot</a></li>
                             <li className="li"><a href="#about">Birthday Shoot</a></li>
@@ -101,15 +101,15 @@ const Header = () =>{
                 <article>
                     <div className="card">
                         <div className="card-header">
-                            Featured <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                            Featured <i className="fa fa-bookmark-o" aria-hidden="true"></i>
                         </div>
                         <div className="card-body">
                             <center>
-                                <h5 className="card-title">Crew of the Studio-600D <i class="fa fa-heart" aria-hidden="true" style = {{color:"red"}}></i> <i class="fa fa-camera" aria-hidden="true"></i></h5><br/>
-                                    <a href="https://www.facebook.com/kasun.chinthaka.167" target="_blank"><img  class="rounded-circle" src="https://i.ibb.co/2ksB7CY/kasunP.jpg"  style={{width:"20%", marginRight:"15px"}} className="zoom" title="Kasun Perera"/></a>
-                                    <a href="https://www.facebook.com/thivazz" target="_blank"><img class="rounded-circle" src="https://i.ibb.co/D1mn5qB/Thiwanka.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Thiwanka Padmal"/></a>
-                                    <a href="https://www.facebook.com/profile.php?id=100011016543706" target="_blank"><img class="rounded-circle" src="https://i.ibb.co/5GVq2GR/Amila.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Amila Perera"/></a>
-                                    <a href="https://www.facebook.com/pasindu.randimalrasnayaka" target="_blank"><img class="rounded-circle" src="https://i.ibb.co/SwdBsXy/Pasindu.jpg" style={{width:"19.9%"}} className="zoom"title="Pasindu Randimal"/></a><br/>
+                                <h5 className="card-title">Crew of the Studio-600D <i className="fa fa-heart" aria-hidden="true" style = {{color:"red"}}></i> <i className="fa fa-camera" aria-hidden="true"></i></h5><br/>
+                                    <a href="https://www.facebook.com/kasun.chinthaka.167" target="_blank"><img  className="rounded-circle" src="https://i.ibb.co/2ksB7CY/kasunP.jpg"  style={{width:"20%", marginRight:"15px"}} className="zoom" title="Kasun Perera"/></a>
+                                    <a href="https://www.facebook.com/thivazz" target="_blank"><img className="rounded-circle" src="https://i.ibb.co/D1mn5qB/Thiwanka.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Thiwanka Padmal"/></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100011016543706" target="_blank"><img className="rounded-circle" src="https://i.ibb.co/5GVq2GR/Amila.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Amila Perera"/></a>
+                                    <a href="https://www.facebook.com/pasindu.randimalrasnayaka" target="_blank"><img className ="rounded-circle" src="https://i.ibb.co/SwdBsXy/Pasindu.jpg" style={{width:"19.9%"}} className="zoom"title="Pasindu Randimal"/></a><br/>
                             </center>
                         </div><br/>
                     </div>
@@ -118,64 +118,64 @@ const Header = () =>{
                         <h5 className="card-title">The Most Popular Photo Collection </h5><br/>
                                 <div className = "container">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="card">
-                                            <div class="view overlay">
-                                                <img src="https://i.ibb.co/M7n0sfN/11.jpg" class="card-img-top" alt=""/>
+                                    <div className="col-lg-4 col-md-6">
+                                        <div className="card">
+                                            <div className="view overlay">
+                                                <img src="https://i.ibb.co/M7n0sfN/11.jpg" className="card-img-top" alt=""/>
                                                 <a href="#">
-                                                <div class="mask rgba-white-slight"></div>
+                                                <div className="mask rgba-white-slight"></div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="card">
-                                            <div class="view overlay">
-                                                <img src="https://i.ibb.co/BtCF4G1/241504379-2792703214353403-48404448897140136-n.jpg" class="card-img-top" alt=""/>
+                                    <div className="col-lg-4 col-md-6">
+                                        <div className="card">
+                                            <div className="view overlay">
+                                                <img src="https://i.ibb.co/BtCF4G1/241504379-2792703214353403-48404448897140136-n.jpg" className="card-img-top" alt=""/>
                                                 <a href="#">
-                                                <div class="mask rgba-white-slight"></div>
+                                                <div className="mask rgba-white-slight"></div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="card">
-                                            <div class="view overlay">
-                                                <img src="https://i.ibb.co/JQmqrFF/8.jpg"  class="card-img-top" alt=""/>
+                                    <div className="col-lg-4 col-md-6">
+                                        <div className="card">
+                                            <div className="view overlay">
+                                                <img src="https://i.ibb.co/JQmqrFF/8.jpg"  className="card-img-top" alt=""/>
                                                 <a href="#">
-                                                <div class="mask rgba-white-slight"></div>
+                                                <div className="mask rgba-white-slight"></div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div><br/><br/>
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="card">
-                                            <div class="view overlay">
-                                                <img src="https://i.ibb.co/4thHTbP/1.jpg" class="card-img-top" alt=""/>
+                                <div className="row">
+                                    <div className="col-lg-4 col-md-6">
+                                        <div className="card">
+                                            <div className="view overlay">
+                                                <img src="https://i.ibb.co/4thHTbP/1.jpg" className="card-img-top" alt=""/>
                                                 <a href="#">
-                                                <div class="mask rgba-white-slight"></div>
+                                                <div className="mask rgba-white-slight"></div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="card">
-                                            <div class="view overlay">
-                                                <img src="https://i.ibb.co/CJhKwxs/5.jpg" class="card-img-top" alt=""/>
+                                    <div className="col-lg-4 col-md-6">
+                                        <div className="card">
+                                            <div className="view overlay">
+                                                <img src="https://i.ibb.co/CJhKwxs/5.jpg" className="card-img-top" alt=""/>
                                                 <a href="#">
-                                                <div class="mask rgba-white-slight"></div>
+                                                <div className="mask rgba-white-slight"></div>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="card">
-                                            <div class="view overlay">
-                                                <img src="https://i.ibb.co/xHZ206W/Studio-600-D.jpg"  class="card-img-top" alt=""/>
+                                    <div className="col-lg-4 col-md-6">
+                                        <div className="card">
+                                            <div className="view overlay">
+                                                <img src="https://i.ibb.co/xHZ206W/Studio-600-D.jpg"  className="card-img-top" alt=""/>
                                                 <a href="#">
-                                                <div class="mask rgba-white-slight"></div>
+                                                <div className="mask rgba-white-slight"></div>
                                                 </a>
                                             </div>
                                         </div>

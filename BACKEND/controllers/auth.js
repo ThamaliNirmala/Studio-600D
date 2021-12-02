@@ -1,6 +1,8 @@
 const User = require("../models/auth")
 const ErrorResponse = require("../utils/errorResponse")
 
+
+
 //when we use asynchrones function we need try catch block
 exports.register = async (req , res , next) =>{  
    
@@ -16,7 +18,6 @@ exports.register = async (req , res , next) =>{
        next(error);
     }
 }
-
 
 exports.login = async (req , res , next) =>{
    const {email , password} = req.body;
@@ -47,7 +48,6 @@ exports.login = async (req , res , next) =>{
             error:error.message
     })       
    }
-
 }
 
 const sendToken = (user , statusCode , res)=>{ //JWT get
