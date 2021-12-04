@@ -26,6 +26,7 @@ export default class GoingAwayTableRow extends Component {
         return (
             <tr>
                 <td style={{color:"darkgray"}}>{this.props.obj.coupleName}</td>
+                <td style={{color:"darkgray"}}>{this.props.obj.collectionURL}</td>
                 <td style={{color:"darkgray"}}><img src = {this.props.obj.imgURL1} style = {{width:"200px", height: "300px"}} alt = {this.props.obj.coupleName}/></td>
                 <td style={{color:"darkgray"}}><img src = {this.props.obj.imgURL2} style = {{width:"200px", height: "300px"}} alt = {this.props.obj.coupleName}/></td>
                 <td style={{color:"darkgray"}}><img src = {this.props.obj.imgURL3} style = {{width:"200px", height: "300px"}} alt = {this.props.obj.coupleName}/></td>
@@ -39,7 +40,7 @@ export default class GoingAwayTableRow extends Component {
                         <Button size="sm" onClick={this.deleteAssistant} variant="danger"><i class="fa fa-window-close" aria-hidden="true" ></i> Delete</Button>
                     
                 </td>
-                <ToastContainer style={{marginTop:"50px" , position:"absolute"}}/>
+                <ToastContainer style={{marginTop:"5px" , position:"absolute"}}/>
             </tr>
         );
     }

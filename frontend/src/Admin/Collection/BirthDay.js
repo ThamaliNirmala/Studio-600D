@@ -10,11 +10,12 @@ const BirthDay = ()=>{
     const [imgURL1 , setImgURL1] = useState("");
     const [imgURL2 , setImgURL2] = useState("");
     const [imgURL3 , setImgURL3] = useState("");
+    const [collectionURL , setcollectionURL] = useState("");
     const [password , setPassword] = useState("");
     const downloads = -1;
     const likes = -1;
     const unLikes = -1;
-    const category = "birthDay";
+    const category = "kids";
     const [loading, setLoading] = useState(false); //additional 
     const [isError, setIsError] = useState(false);
 
@@ -31,7 +32,7 @@ const BirthDay = ()=>{
         }
 
         try {
-            const {data} = await axios.post("http://localhost:8070/birthDay/add" , {personName , imgURL1 , imgURL2 , imgURL3 , downloads , likes , unLikes , category, password} , config);
+            const {data} = await axios.post("http://localhost:8070/birthDay/add" , {personName , imgURL1 , imgURL2 , imgURL3 , collectionURL , downloads , likes , unLikes , category, password} , config);
             toast("Success! BirthDay collectoin Added 😘")
             setLoading(false);
 
@@ -51,10 +52,10 @@ const BirthDay = ()=>{
                     <div className="card">
                         <div className="card-body">
                             <center>
-                                <h5 className="card-title">Add BirthDay Photo Collection</h5>
+                                <h5 className="card-title">Add Kids Photo Collection</h5>
                                 <TextField
                                     id="outlined-with-placeholder"
-                                    label="Enter Person Name"
+                                    label="Enter Kid's Name"
                                     placeholder="ex: Kasun"
                                     margin="normal"
                                     variant="outlined"                                  
@@ -99,6 +100,18 @@ const BirthDay = ()=>{
                                     color="secondary"
                                     value={imgURL3}
                                     onChange={(e)=>setImgURL3(e.target.value)} required
+                                /><br/>
+                                <TextField
+                                    id="outlined-with-placeholder"
+                                    label="Enter Download URL"
+                                    margin="normal"
+                                    variant="outlined"
+                                    placeholder="URL of Collection"
+                                    type="text"
+                                    size="small"
+                                    color="secondary"
+                                    value={collectionURL}
+                                    onChange={(e)=>setcollectionURL(e.target.value)} required
                                 /><br/>
                                 <TextField
                                     id="outlined-with-placeholder"

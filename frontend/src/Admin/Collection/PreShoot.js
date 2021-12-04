@@ -10,6 +10,7 @@ const PreShoot = ()=>{
     const [imgURL1 , setImgURL1] = useState("");
     const [imgURL2 , setImgURL2] = useState("");
     const [imgURL3 , setImgURL3] = useState("");
+    const [collectionURL , setcollectionURL] = useState("");
     const [password , setPassword] = useState("");
     const downloads = -1;
     const likes = -1;
@@ -31,7 +32,7 @@ const PreShoot = ()=>{
         }
 
         try {
-            const {data} = await axios.post("http://localhost:8070/preShoot/add" , {coupleName , imgURL1 , imgURL2 , imgURL3 , downloads , likes , unLikes , category, password} , config);
+            const {data} = await axios.post("http://localhost:8070/preShoot/add" , {coupleName , imgURL1 , imgURL2 , imgURL3 , collectionURL , downloads , likes , unLikes , category, password} , config);
             toast("Success! PreShoot collectoin Added 😘")
             setLoading(false);
 
@@ -99,6 +100,18 @@ const PreShoot = ()=>{
                                     color="secondary"
                                     value={imgURL3}
                                     onChange={(e)=>setImgURL3(e.target.value)} required
+                                /><br/>
+                                <TextField
+                                    id="outlined-with-placeholder"
+                                    label="Enter Download URL"
+                                    margin="normal"
+                                    variant="outlined"
+                                    placeholder="URL of Collection"
+                                    type="text"
+                                    size="small"
+                                    color="secondary"
+                                    value={collectionURL}
+                                    onChange={(e)=>setcollectionURL(e.target.value)} required
                                 /><br/>
                                 <TextField
                                     id="outlined-with-placeholder"

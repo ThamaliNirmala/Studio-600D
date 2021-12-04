@@ -61,11 +61,11 @@ class FullWidthTabs extends React.Component {
             textColor="primary"
             variant="fullWidth"
           >
-            <Tab label="BirthDay" />
-            <Tab label="GoingAway" />
             <Tab label="Modelling" />
             <Tab label="PreShoot" />
             <Tab label="WeddingShoot" />
+            <Tab label="HomeComming" />
+            <Tab label="Kids" />
           </Tabs>
         </AppBar>
         <SwipeableViews
@@ -73,11 +73,11 @@ class FullWidthTabs extends React.Component {
           index={this.state.value}
           onChangeIndex={this.handleChangeIndex}
         >
-          <TabContainer dir={theme.direction}><BirthDayList/></TabContainer>
-          <TabContainer dir={theme.direction}><GoingAwayList/></TabContainer>
           <TabContainer dir={theme.direction}><ModellingList/></TabContainer>
           <TabContainer dir={theme.direction}><PreShootList/></TabContainer>
           <TabContainer dir={theme.direction}><WeddingShootList/></TabContainer>
+          <TabContainer dir={theme.direction}><GoingAwayList/></TabContainer>
+          <TabContainer dir={theme.direction}><BirthDayList/></TabContainer>
         </SwipeableViews>
       </div>
     );

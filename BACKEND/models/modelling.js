@@ -15,6 +15,9 @@ const ModellingSchema = new Schema({
     imgURL3:{
         type:String,
     },
+    collectionURL:{
+        type:String,
+    },
     downloads:{
         type:String,
     },

@@ -38,7 +38,8 @@ export default class BirthDayList extends Component {
               <Table striped bordered hover>
                   <thead>
                       <tr>
-                          <th>Person Name</th>
+                          <th>Kid's Name</th>
+                          <th>Collection URL</th>
                           <th>Image 1</th>
                           <th>Image 2</th>
                           <th>Image 3</th>

@@ -39,6 +39,7 @@ export default class GoingAwayList extends Component {
                   <thead>
                       <tr>
                         <th>Couple Name</th>
+                        <th>Collection URL</th>
                         <th>Image 1</th>
                         <th>Image 2</th>
                         <th>Image 3</th>
