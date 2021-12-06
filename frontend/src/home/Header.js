@@ -60,11 +60,11 @@ const Header = () =>{
                             <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Collection</a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="#"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Pre Shoot</a>
-                                <a className="dropdown-item" href="#"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Wedding Shoot</a>
-                                <a className="dropdown-item" href="#"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Going Away</a>
-                                <a className="dropdown-item" href="#"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Modelling photography</a>
-                                <a className="dropdown-item" href="#"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Birthday Shoot</a>
+                                <Link className="dropdown-item" to="/kids"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Kids Collection </Link>
+                                <Link className="dropdown-item" to="/goingaway"><i className="fa fa-check-circle-o" aria-hidden="true"></i> HomeComming </Link>
+                                <Link className="dropdown-item" to="/modelling"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Modelling</Link>
+                                <Link className="dropdown-item" to="/preshoot"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Pre Shoot </Link>
+                                <Link className="dropdown-item" to="/weddingshoot"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Wedding Shoot </Link>
                             </div>
                             </li>   
                             <li className="nav-item">
@@ -90,10 +90,12 @@ const Header = () =>{
                 <nav className="nav">
                     <ul className="ul">
                         <center>
-                            <li className="li"><Link className="active" to = "/">Home</Link></li>
-                            <li className="li"><a href="#news">Modelling Shoot</a></li>
-                            <li className="li"><a href="#contact">Wedding Shoot</a></li>
-                            <li className="li"><a href="#about">Birthday Shoot</a></li>
+                        <li className="li"><Link className="active" to = "/">Home</Link></li>
+                            <li className="li"><Link to="/modelling">Modelling</Link></li>
+                            <li className="li"><Link to="/preshoot">Pre Shoot</Link></li>
+                            <li className="li"><Link to="/weddingshoot">Wedding Shoot</Link></li>
+                            <li className="li"><Link to="/goingaway">HomeComming </Link></li>
+                            <li className="li"><Link to="/kids">Kid's Collection</Link></li>
                         </center>
                      </ul>
                 </nav>
@@ -116,72 +118,7 @@ const Header = () =>{
                     <div><br/>
                         <center>
                         <h5 className="card-title">The Most Popular Photo Collection </h5><br/>
-                                <div className = "container">
-                                <div class="row">
-                                    <div className="col-lg-4 col-md-6">
-                                        <div className="card">
-                                            <div className="view overlay">
-                                                <img src="https://i.ibb.co/M7n0sfN/11.jpg" className="card-img-top" alt=""/>
-                                                <a href="#">
-                                                <div className="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6">
-                                        <div className="card">
-                                            <div className="view overlay">
-                                                <img src="https://i.ibb.co/BtCF4G1/241504379-2792703214353403-48404448897140136-n.jpg" className="card-img-top" alt=""/>
-                                                <a href="#">
-                                                <div className="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6">
-                                        <div className="card">
-                                            <div className="view overlay">
-                                                <img src="https://i.ibb.co/JQmqrFF/8.jpg"  className="card-img-top" alt=""/>
-                                                <a href="#">
-                                                <div className="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><br/><br/>
-                                <div className="row">
-                                    <div className="col-lg-4 col-md-6">
-                                        <div className="card">
-                                            <div className="view overlay">
-                                                <img src="https://i.ibb.co/4thHTbP/1.jpg" className="card-img-top" alt=""/>
-                                                <a href="#">
-                                                <div className="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6">
-                                        <div className="card">
-                                            <div className="view overlay">
-                                                <img src="https://i.ibb.co/CJhKwxs/5.jpg" className="card-img-top" alt=""/>
-                                                <a href="#">
-                                                <div className="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6">
-                                        <div className="card">
-                                            <div className="view overlay">
-                                                <img src="https://i.ibb.co/xHZ206W/Studio-600-D.jpg"  className="card-img-top" alt=""/>
-                                                <a href="#">
-                                                <div className="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
+                                
                         </center>
                     </div>
                    

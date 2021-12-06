@@ -52,7 +52,7 @@ const GoingAway = ()=>{
                     <div className="card">
                         <div className="card-body">
                             <center>
-                                <h5 className="card-title">Add GoingAway Photo Collection</h5>
+                                <h5 className="card-title">Add HomeComming Photo Collection</h5>
                                 <TextField
                                     id="outlined-with-placeholder"
                                     label="Enter Couple Name"

@@ -8,7 +8,14 @@ import Header from "./Home/Header";
 import Login from "./Admin/Login";
 import PrivateRoute from "./Admin/PrivateRoute";
 import PrivateScreen from "./Admin/PrivateScreen";
-import CollectionView from './Admin/CollectionView';
+import CollectionView from "./Admin/CollectionView";
+import BirthDay from "./Home/Collection/BirthDay";
+import GoingAway from "./Home/Collection/GoingAway";
+import Modelling from "./Home/Collection/Modelling";
+import PreShoot from "./Home/Collection/PreShoot";
+import WeddingShoot from "./Home/Collection/WeddingShoot";
+import Item from "./Home/Item";
+
 
 function App() {
   
@@ -37,7 +44,14 @@ function App() {
             <Route path="/admin/add/:id/:name" exact component ={PrivateScreen}/>
             <Route path="/login" exact component={Login} />
             <Route path="/" exact component={Header} />
+            <Route path="/view/:id/:crypto/:personName/:url/:image1/:image2/:image3/:downloads/:likes/:unLikes/:category/:password/:route" exact component={Item} />
+            <Route path="/kids" exact component={BirthDay} />
+            <Route path="/goingaway" exact component={GoingAway} />
+            <Route path="/modelling" exact component={Modelling} />
+            <Route path="/preshoot" exact component={PreShoot} />
+            <Route path="/weddingshoot" exact component={WeddingShoot} />
             <Route path="/admin/collectionview/:id/:name" exact component={CollectionView}/>
+            
               
           </Switch>
         </main>

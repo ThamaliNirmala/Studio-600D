@@ -74,11 +74,11 @@ const CollectionView = ({history} , props)=>{
                             <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Collection</a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Pre Shoot</a>
-                                <a className="dropdown-item" href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Wedding Shoot</a>
-                                <a className="dropdown-item" href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Going Away</a>
-                                <a className="dropdown-item" href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Modelling photography</a>
-                                <a className="dropdown-item" href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Birthday Shoot</a>
+                            <Link className="dropdown-item" to="/kids"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Kids Collection </Link>
+                                <Link className="dropdown-item" to="/goingaway"><i className="fa fa-check-circle-o" aria-hidden="true"></i> HomeComming </Link>
+                                <Link className="dropdown-item" to="/modelling"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Modelling</Link>
+                                <Link className="dropdown-item" to="/preshoot"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Pre Shoot </Link>
+                                <Link className="dropdown-item" to="/weddingshoot"><i className="fa fa-check-circle-o" aria-hidden="true"></i> Wedding Shoot </Link>
                             </div>
                             </li>   
                             <li className="nav-item active">
