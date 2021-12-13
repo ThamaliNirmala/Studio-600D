@@ -267,3 +267,19 @@ height: 30px;
 {display: block;
 cursor: pointer;
 }
+
+.thumbsup:hover{
+  color: blue;
+}
+
+.likeColour{
+  color: blue;
+}
+
+.thumbsdown:hover{
+  color:#171717;
+}
+
+.unLikeColour{
+  color: #171717;
+}

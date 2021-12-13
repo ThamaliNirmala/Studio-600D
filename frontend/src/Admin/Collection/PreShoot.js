@@ -15,7 +15,7 @@ const PreShoot = ()=>{
     const downloads = -1;
     const likes = -1;
     const unLikes = -1;
-    const category = "perShoot";
+    const category = "preShoot";
     const [loading, setLoading] = useState(false); //additional 
     const [isError, setIsError] = useState(false);
 

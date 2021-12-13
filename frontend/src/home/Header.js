@@ -1,6 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import './Header.css'
+import './Header.css';
+import GoingAway from "./GoingAway"
+import WeddingShoot from "./WeddingShoot"
+import Modelling from "./Modelling"
+
 
 const Header = () =>{
     
@@ -114,13 +118,24 @@ const Header = () =>{
                                     <a href="https://www.facebook.com/pasindu.randimalrasnayaka" target="_blank"><img className ="rounded-circle" src="https://i.ibb.co/SwdBsXy/Pasindu.jpg" style={{width:"19.9%"}} className="zoom"title="Pasindu Randimal"/></a><br/>
                             </center>
                         </div><br/>
-                    </div>
-                    <div><br/>
+                    </div><br/>
                         <center>
-                        <h5 className="card-title">The Most Popular Photo Collection </h5><br/>
-                                
+                            <h5 className="card-title">The Most Popular Photo Collection </h5><br/>
+                            <div style={{display:"inline-grid" , marginLeft:"10px"}}>
+                                <GoingAway/>
+
+                            </div> 
+
+                            <div style={{display:"inline-grid" , marginLeft:"10px"}}>
+                                <WeddingShoot/>
+
+                            </div> 
+
+                            <div style={{display:"inline-grid" , marginLeft:"10px"}}>
+                                <Modelling/>
+
+                            </div>   
                         </center>
-                    </div>
                    
                 </article>
             </section>

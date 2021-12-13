@@ -187,14 +187,13 @@ render() {
                                     <center>
                                         <div className="card border-primary mb-3" > 
                                             <div className="card-body text-dark">
-                                            <img src={i.imgURL1} border="0'" alt={i.personName} className="img-thumbnail zoom" style={{width:"200px" , height:"300px", marginTop: "20px", marginRight:"25px", marginLeft:"10px"}}/>
-                                            <img src={i.imgURL2} border="0'" alt={i.personName} className="img-thumbnail zoom" style={{width:"200px" , height:"300px", marginTop: "20px", marginRight:"25px"}}/>
-                                            <img src={i.imgURL3} border="0'" alt={i.personName} className="img-thumbnail zoom" style={{width:"200px" , height:"300px", marginTop: "20px", marginRight:"10px"}}/>
+                                            <img src={i.imgURL1} border="0'" alt={i.personName} className="img-thumbnail zoom" style={{width:"200px" , height:"300px", margin:"10px 10px 10px 10px"}}/>
                                             <br/><br/>
                                             <p className="badge badge-secondary">{i.personName}</p><br/>
-                                            <span style={{marginRight:"200px"}} className="coloured"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {i.likes} <i class="fa fa-thumbs-down" aria-hidden="true"></i> {i.unLikes}</span>
-                                            <span style={{marginLeft:"200px"}}><i class="fa fa-download" aria-hidden="true"></i> {i.downloads}</span><br/>
-                                            <Link to= {`/view/${i._id}/${crypto.randomBytes(40).toString("hex")}/${i.personName}/${encodeURIComponent(i.collectionURL)}/${encodeURIComponent(i.imgURL1)}/${encodeURIComponent(i.imgURL2)}/${encodeURIComponent(i.imgURL3)}/${i.downloads}/${i.likes}/${i.unLikes}/${i.category}/${i.password}/${encodeURIComponent("/birthDay")}`}><button className="btn btn-primary" style={{width:"75%"}}><i class="fa fa-eye" aria-hidden="true"></i> View</button></Link>
+                                            <span style={{float:"left"}} className="likeColour"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {i.likes} </span>
+                                            <span style={{ marginRight:"125px"}} className="unLikeColour"> <i class="fa fa-thumbs-down" aria-hidden="true"></i> {i.unLikes}</span>
+                                            <span style={{float:"right"}}><i class="fa fa-download" aria-hidden="true"></i> {i.downloads}</span><br/>
+                                            <Link to= {`/view/${i._id}/${crypto.randomBytes(40).toString("hex")}/${i.personName}/${encodeURIComponent(i.collectionURL)}/${encodeURIComponent(i.imgURL1)}/${encodeURIComponent(i.imgURL2)}/${encodeURIComponent(i.imgURL3)}/${i.downloads}/${i.likes}/${i.unLikes}/${i.category}/${i.password}/${encodeURIComponent("/birthDay")}`}><button className="btn btn-primary" style={{width:"100%"}}><i class="fa fa-eye" aria-hidden="true"></i> View</button></Link>
                                             </div>
                                         
                                         </div>

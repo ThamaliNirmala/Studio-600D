@@ -15,7 +15,7 @@ const BirthDay = ()=>{
     const downloads = -1;
     const likes = -1;
     const unLikes = -1;
-    const category = "kids";
+    const category = "birthDay";
     const [loading, setLoading] = useState(false); //additional 
     const [isError, setIsError] = useState(false);
 
