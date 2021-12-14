@@ -61,10 +61,10 @@ export default class weddingShoot extends React.Component {
             <div className="polaroid" style={{ width:"auto" , height:"auto"  , maxWidth:"auto"}}>
                 <div>
                     {this.state.filteredData.length === 0 ? (
-                        <p></p>
+                        <h1></h1>
                             ): (this.state.filteredData.map(i => 
                         
-                        <p>
+                        <div>
                             <center>
                                 <div className="card border border-danger mb-3"> 
                                     <div className="card-body text-dark">
@@ -80,7 +80,7 @@ export default class weddingShoot extends React.Component {
                                 </div>
                             </center>
 
-                        </p> ))}
+                        </div> ))}
                 </div>
                                 
             </div>

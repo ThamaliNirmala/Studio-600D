@@ -18,12 +18,12 @@ var curr_year = today.getFullYear();
 
 today = m_names[curr_month] + " " + curr_date + "/ " + curr_year;
 
-const{id, personName, url, image1, image2, image3, downloads, likes, unLikes, category, password, route} = useParams();
+const{id, personName, url, image1, image2, image3, downloads, likes, unLikes, category, password} = useParams();
 const Image1 = decodeURIComponent(image1);
 const Image2 = decodeURIComponent(image2);
 const Image3 = decodeURIComponent(image3);
 const URL = decodeURIComponent(url);
-const ROUTE = decodeURIComponent(route);
+
 
 const handleDownload = async ()=>{
     try {
@@ -123,7 +123,7 @@ return(
                         <Link to="/login" className="nav-link">Admin</Link>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#"> Contact Us</a>
+                        <Link to="/contact" className="nav-link">Contact Us</Link>
                         </li>               
                     </ul>
                     </div>
