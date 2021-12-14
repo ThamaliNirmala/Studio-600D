@@ -120,7 +120,7 @@ const Login = ({history}) =>{
                                 <Link to="/login" className="nav-link">Admin</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href="#"> Contact Us</a>
+                            <Link to="/contact" className="nav-link">Contact Us</Link>
                             </li>               
                         </ul>
                         </div>
@@ -131,7 +131,7 @@ const Login = ({history}) =>{
             </header>
             <hr class="my-4"></hr>
             <center>
-                <h2 style = {{fontFamily:"Times, Times New Roman, serif"}}> The Most Wonderful Wedding Photography In The World.</h2>
+                <h2 style = {{fontWeight:"normal"}}> The Most Wonderful Wedding Photography In The World.</h2>
             </center>
             <hr class="my-4"></hr>
 

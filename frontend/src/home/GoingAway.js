@@ -66,15 +66,15 @@ export default class GoingAway extends React.Component {
                         
                         <p>
                             <center>
-                                <div className="card border-primary mb-3" > 
+                                <div className="card border border-danger mb-3"> 
                                     <div className="card-body text-dark">
-                                        <img src={i.imgURL1} border="0'" alt={i.coupleName} className="img-thumbnail zoom" style={{width:"200px" , height:"300px", margin: "10px 10px 10px 10px"}}/>
+                                        <img src={i.imgURL1} border="0'" alt={i.coupleName} className="img-thumbnail zoom" style={{width:"210px" , height:"300px", margin: "10px 10px 10px 10px"}}/>
                                         <br/><br/>
                                         <p className="badge badge-secondary">{i.coupleName}</p><br/>
                                         <span style={{float:"left"}} className="likeColour"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {i.likes} </span>
                                             <span style={{ marginRight:"125px"}} className="unLikeColour"> <i class="fa fa-thumbs-down" aria-hidden="true"></i> {i.unLikes}</span>
                                         <span style={{float:"right"}}><i class="fa fa-download" aria-hidden="true"></i> {i.downloads}</span><br/>
-                                        <Link to= {`/view/${i._id}/${crypto.randomBytes(40).toString("hex")}/${i.coupleName}/${encodeURIComponent(i.collectionURL)}/${encodeURIComponent(i.imgURL1)}/${encodeURIComponent(i.imgURL2)}/${encodeURIComponent(i.imgURL3)}/${i.downloads}/${i.likes}/${i.unLikes}/${i.category}/${i.password}/${encodeURIComponent("/goingAway")}`}><button className="btn btn-primary" style={{width:"100%"}}><i class="fa fa-eye" aria-hidden="true"></i> View</button></Link>
+                                        <Link to= {`/view/${i._id}/${crypto.randomBytes(40).toString("hex")}/${i.coupleName}/${encodeURIComponent(i.collectionURL)}/${encodeURIComponent(i.imgURL1)}/${encodeURIComponent(i.imgURL2)}/${encodeURIComponent(i.imgURL3)}/${i.downloads}/${i.likes}/${i.unLikes}/${i.category}/${i.password}/${encodeURIComponent("/goingAway")}`}><button className="btn btn-primary" style={{width:"100%"}}><i class="fa fa-eye" aria-hidden="true"></i> View Collection</button></Link>
                                     </div>
 
                                 </div>

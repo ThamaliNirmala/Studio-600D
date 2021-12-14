@@ -283,3 +283,8 @@ cursor: pointer;
 .unLikeColour{
   color: #171717;
 }
+
+.cardBorder{
+  border-color: crimson;
+
+}

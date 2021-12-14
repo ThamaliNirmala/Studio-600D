@@ -15,6 +15,7 @@ import Modelling from "./Home/Collection/Modelling";
 import PreShoot from "./Home/Collection/PreShoot";
 import WeddingShoot from "./Home/Collection/WeddingShoot";
 import Item from "./Home/Item";
+import Contact from "./Home/Contact"
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route path="/admin/add/:id/:name" exact component ={PrivateScreen}/>
             <Route path="/login" exact component={Login} />
             <Route path="/" exact component={Header} />
+            <Route path="/contact" exact component={Contact} />
             <Route path="/view/:id/:crypto/:personName/:url/:image1/:image2/:image3/:downloads/:likes/:unLikes/:category/:password/:route" exact component={Item} />
             <Route path="/kids" exact component={BirthDay} />
             <Route path="/goingaway" exact component={GoingAway} />

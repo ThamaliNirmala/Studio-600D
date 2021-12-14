@@ -134,7 +134,7 @@ return(
         </header>
         <hr className="my-4"></hr>
         <center>
-            <h2 style = {{fontFamily:"Times, Times New Roman, serif"}}> The Most Wonderful Wedding Photography In The World.</h2>
+            <h2 style={{fontWeight:"normal"}}> The Most Wonderful Wedding Photography In The World.</h2>
         </center>
         <hr className="my-4"></hr>
 
@@ -158,18 +158,18 @@ return(
                 <center>
                 <div style={{display:"inline-block" , padding: "10px 1px 10px 10px"}}>
                 <center>
-                    <div className="card border-primary mb-3" > 
+                    <div className="card border border-primary mb-3"> 
                             <center>
-                                <img src={Image1} border="0'" alt={Image1} className="img-thumbnail" style={{width:"400px" , height:"600px",margin: "10px 10px 10px 10px"}}/><br/>
-                                <img src={Image2} border="0'" alt={Image2} className="img-thumbnail" style={{width:"400px" , height:"600px", margin: "10px 10px 10px 10px"}}/><br/>
-                                <img src={Image3} border="0'" alt={Image3} className="img-thumbnail" style={{width:"400px" , height:"600px", marginTop:"10px"}}/><br/>
+                                <img src={Image1} border="0'" alt={Image1} className="img-thumbnail" style={{width:"250px" , height:"400px",margin: "20px 10px 10px 20px"}}/>
+                                <img src={Image2} border="0'" alt={Image2} className="img-thumbnail" style={{width:"250px" , height:"400px", margin: "20px 10px 10px 10px"}}/>
+                                <img src={Image3} border="0'" alt={Image3} className="img-thumbnail" style={{width:"250px" , height:"400px", margin:"20px 20px 10px 10px"}}/>
                                 <div class="card-header" id="like"><span><b>Zip Extraction Password : </b></span> {password}</div>
-                                <span className="thumbsup" id="heart" onClick={() => { handleLike(); Like();}}>{likes} <i class="fa fa-thumbs-up" aria-hidden="true"></i></span> 
-                                <span className="thumbsdown" id="unlike" onClick={() => { handleUnLike(); UnLike();}}>{unLikes} <i class="fa fa-thumbs-down" aria-hidden="true"></i></span> 
-                                <span id="increment">  {downloads} <i class="fa fa-download" aria-hidden="true"></i></span><br/>
+                                <span className="thumbsup" id="heart" onClick={() => { handleLike(); Like();}}>{likes} <i class="fa fa-thumbs-up" aria-hidden="true" title="Like"></i></span> 
+                                <span className="thumbsdown" id="unlike" style= {{marginRight:"5px", marginLeft:"5px"}} onClick={() => { handleUnLike(); UnLike();}}>{unLikes} <i class="fa fa-thumbs-down" aria-hidden="true" title="UnLike" style={{marginRight:"5px"}}></i> | </span>
+                                <span id="increment" style = {{marginLeft:"5px"}}>  {downloads} <i class="fa fa-download" aria-hidden="true"></i></span><br/>
                                 <div class="card-body text-success">
                                     <span className="badge badge-secondary">{personName}</span><br/><br/>
-                                    <a href={URL} target="_blank"><button className="btn btn-danger" onClick={() => { handleDownload(); Increment();}}><i class="fa fa-download" aria-hidden="true"></i> Download</button></a>
+                                    <a href={URL} target="_blank"><button className="btn btn-danger" onClick={() => { handleDownload(); Increment();}}><i class="fa fa-download" aria-hidden="true"></i> Download Collection</button></a>
                                 </div>
                             </center>
                         </div>

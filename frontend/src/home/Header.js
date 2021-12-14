@@ -75,7 +75,7 @@ const Header = () =>{
                             <Link to="/login" className="nav-link">Admin</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href="#"> Contact Us</a>
+                            <Link to="/contact" className="nav-link">Contact Us</Link>
                             </li>               
                         </ul>
                         </div>
@@ -86,7 +86,7 @@ const Header = () =>{
             </header>
             <hr className="my-4"></hr>
             <center>
-                <h2 style = {{fontFamily:"Times, Times New Roman, serif"}}> The Most Wonderful Wedding Photography In The World.</h2>
+                <h2 style={{fontWeight:"normal"}}> The Most Wonderful Wedding Photography In The World.</h2>
             </center>
             <hr className="my-4"></hr>
 
@@ -111,30 +111,28 @@ const Header = () =>{
                         </div>
                         <div className="card-body">
                             <center>
-                                <h5 className="card-title">Crew of the Studio-600D <i className="fa fa-heart" aria-hidden="true" style = {{color:"red"}}></i> <i className="fa fa-camera" aria-hidden="true"></i></h5><br/>
-                                    <a href="https://www.facebook.com/kasun.chinthaka.167" target="_blank"><img  className="rounded-circle" src="https://i.ibb.co/2ksB7CY/kasunP.jpg"  style={{width:"20%", marginRight:"15px"}} className="zoom" title="Kasun Perera"/></a>
-                                    <a href="https://www.facebook.com/thivazz" target="_blank"><img className="rounded-circle" src="https://i.ibb.co/D1mn5qB/Thiwanka.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Thiwanka Padmal"/></a>
-                                    <a href="https://www.facebook.com/profile.php?id=100011016543706" target="_blank"><img className="rounded-circle" src="https://i.ibb.co/5GVq2GR/Amila.jpg" style={{width:"20%", marginRight:"15px"}} className="zoom" title="Amila Perera"/></a>
-                                    <a href="https://www.facebook.com/pasindu.randimalrasnayaka" target="_blank"><img className ="rounded-circle" src="https://i.ibb.co/SwdBsXy/Pasindu.jpg" style={{width:"19.9%"}} className="zoom"title="Pasindu Randimal"/></a><br/>
+                                <h5 className="card-title">Crew of the Studio-600D 📸🤵</h5><br/>
+                                    <a href="https://www.facebook.com/kasun.chinthaka.167" target="_blank"><img className="rounded-circle" src="https://i.ibb.co/2ksB7CY/kasunP.jpg"  style={{width:"20%", marginRight:"15px"}}  title="Kasun Perera"/></a>
+                                    <a href="https://www.facebook.com/thivazz" target="_blank"><img border="0'"className="rounded-circle" src="https://i.ibb.co/D1mn5qB/Thiwanka.jpg" style={{width:"20%", marginRight:"15px"}}  title="Thiwanka Padmal"/></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100011016543706" target="_blank"><img className="rounded-circle" src="https://i.ibb.co/5GVq2GR/Amila.jpg" style={{width:"20%", marginRight:"15px"}}  title="Amila Perera"/></a>
+                                    <a href="https://www.facebook.com/pasindu.randimalrasnayaka" target="_blank"><img className ="rounded-circle" src="https://i.ibb.co/SwdBsXy/Pasindu.jpg" style={{width:"19.9%"}} title="Pasindu Randimal"/></a><br/>
                             </center>
                         </div><br/>
-                    </div><br/>
+                    </div><br/><br/>
                         <center>
-                            <h5 className="card-title">The Most Popular Photo Collection </h5><br/>
-                            <div style={{display:"inline-grid" , marginLeft:"10px"}}>
-                                <GoingAway/>
-
-                            </div> 
-
+                            <h5 className="card-title" style={{fontFamily: "Copperplate, Papyrus, fantasy", fontSize:"25px"}}>Most Popular Photo Collection <i className="fa fa-heart" aria-hidden="true" style = {{color:"red"}}></i> <i className="fa fa-camera" aria-hidden="true"></i></h5><br/>
                             <div style={{display:"inline-grid" , marginLeft:"10px"}}>
                                 <WeddingShoot/>
-
-                            </div> 
+                            </div>
 
                             <div style={{display:"inline-grid" , marginLeft:"10px"}}>
                                 <Modelling/>
+                            </div> 
 
-                            </div>   
+                            <div style={{display:"inline-grid" , marginLeft:"10px"}}>
+                                <GoingAway/>
+                            </div> 
+  
                         </center>
                    
                 </article>

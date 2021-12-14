@@ -136,7 +136,7 @@ render() {
                             <Link to="/login" className="nav-link">Admin</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href="#"> Contact Us</a>
+                            <Link to="/contact" className="nav-link">Contact Us</Link>
                             </li>               
                         </ul>
                         </div>
@@ -147,7 +147,7 @@ render() {
             </header>
             <hr className="my-4"></hr>
             <center>
-                <h2 style = {{fontFamily:"Times, Times New Roman, serif"}}> The Most Wonderful Wedding Photography In The World.</h2>
+                <h2 style = {{fontWeight:"normal"}}> The Most Wonderful Wedding Photography In The World.</h2>
             </center>
             <hr className="my-4"></hr>
 
@@ -185,15 +185,15 @@ render() {
                                             ): (this.state.filteredData.map(i => 
                                 <div style={{display:"inline-block" , padding: "10px 1px 10px 10px"}}>
                                     <center>
-                                        <div className="card border-primary mb-3" > 
+                                        <div className="card border border-primary mb-3"> 
                                             <div className="card-body text-dark">
-                                            <img src={i.imgURL1} border="0'" alt={i.personName} className="img-thumbnail zoom" style={{width:"200px" , height:"300px", margin:"10px 10px 10px 10px"}}/>
+                                            <img src={i.imgURL1} border="0'" alt={i.personName} className="img-thumbnail zoom" style={{width:"210px" , height:"300px", margin:"10px 10px 10px 10px"}}/>
                                             <br/><br/>
                                             <p className="badge badge-secondary">{i.personName}</p><br/>
                                             <span style={{float:"left"}} className="likeColour"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {i.likes} </span>
                                             <span style={{ marginRight:"125px"}} className="unLikeColour"> <i class="fa fa-thumbs-down" aria-hidden="true"></i> {i.unLikes}</span>
                                             <span style={{float:"right"}}><i class="fa fa-download" aria-hidden="true"></i> {i.downloads}</span><br/>
-                                            <Link to= {`/view/${i._id}/${crypto.randomBytes(40).toString("hex")}/${i.personName}/${encodeURIComponent(i.collectionURL)}/${encodeURIComponent(i.imgURL1)}/${encodeURIComponent(i.imgURL2)}/${encodeURIComponent(i.imgURL3)}/${i.downloads}/${i.likes}/${i.unLikes}/${i.category}/${i.password}/${encodeURIComponent("/birthDay")}`}><button className="btn btn-primary" style={{width:"100%"}}><i class="fa fa-eye" aria-hidden="true"></i> View</button></Link>
+                                            <Link to= {`/view/${i._id}/${crypto.randomBytes(40).toString("hex")}/${i.personName}/${encodeURIComponent(i.collectionURL)}/${encodeURIComponent(i.imgURL1)}/${encodeURIComponent(i.imgURL2)}/${encodeURIComponent(i.imgURL3)}/${i.downloads}/${i.likes}/${i.unLikes}/${i.category}/${i.password}/${encodeURIComponent("/birthDay")}`}><button className="btn btn-primary" style={{width:"100%"}}><i class="fa fa-eye" aria-hidden="true"></i> View Collection</button></Link>
                                             </div>
                                         
                                         </div>
